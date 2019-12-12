@@ -13,7 +13,7 @@ var offset = new Offset(client);
 var port = 3001;
 
 app.get('/', function(req, res){
-    res.sendFile('index.html');
+    res.sendFile('index.html', {'root': '.' });
 });
 
 io = io.on('connection', function(socket){
