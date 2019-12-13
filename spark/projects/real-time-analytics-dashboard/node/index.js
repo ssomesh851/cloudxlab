@@ -2,6 +2,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var kafka = require('kafka-node');
+var path = require('path')
 var HighLevelConsumer = kafka.HighLevelConsumer;
 var Offset = kafka.Offset;
 var Client = kafka.Client;
